@@ -133,30 +133,139 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Network Devices(網路設備) << <a href='Network Devices(網路設備).html'>Previous</a> <a href='PCH13.IPv4 and IPv6 Addresses(IPv4和IPv6的地址).html'>Next</a> >> PCH13.IPv4 and IPv6 Addresses(IPv4和IPv6的地址)<br /><h1>Install a Network Adaper(安裝網路適配器)</h1>
-<p id="N106AF" lang=""><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">英。To install the NIC, follow the steps below</span></span></p>
-<p lang="">1.Check documentation to verify which NIC will match your expansion slots (PCI or PCIe) and the LAN requirements. Ensure that the adapter will work with the motherboard.</p>
-<p lang="">2.Power down the computer and disconnect the main power cord from the machine.</p>
-<p lang="">3.Following safe repair practice (proper grounding/anti-static strap), open the side cover of the computer to inspect available expansion slots.</p>
-<p lang="">4.Match the connector/pinouts of the new NIC card and verify it matches the proposed slot.</p>
-<p lang="">5.Remove the corresponding computer PCI option slot cover from the back panel.</p>
-<p lang="">6.Line up the connector of the NIC to the expansion slot and seat it firmly as you guide the bracket up to the back panel of the computer, ensuring proper alignment. Tighten the new NIC with the screw that is usually supplied.</p>
-<p lang="">7.Close the side cover of the computer following safe repair procedures.</p>
-<p lang="">8.Reconnect the main power cord.</p>
-<p lang="">9.Power up the machine.</p>
-<p id="N106AF" lang=""><span style="color: #008000;"><span style="color: #ff0000;">中</span>.要安裝NIC，請按照下列步驟操作</span></p>
-<p lang=""><span style="color: #008000;">1.檢查文檔以確認哪個NIC將與您的擴展插槽（PCI或PCIe）和LAN要求相匹配。確保適配器可與主板配合使用。</span></p>
-<p lang=""><span style="color: #008000;">2.關閉計算機電源，然後從計算機上斷開主電源線。</span></p>
-<p lang=""><span style="color: #008000;">3.按照安全維修慣例（正確的接地/防靜電皮帶），打開計算機的側蓋，檢查可用的擴展槽。</span></p>
-<p lang=""><span style="color: #008000;">4.</span><span style="color: #008000;">匹配新NIC卡的連接器/引腳，並驗證它是否與建議的插槽匹配。</span></p>
-<p lang=""><span style="color: #008000;">5.從背面板上卸下相應的計算機PCI選件插槽蓋。</span></p>
-<p lang=""><span style="color: #008000;">6.</span><span style="color: #008000;">將NIC的連接器對準擴展插槽，並在將支架向上推至計算機的背面板上時將其牢固就位，以確保正確對齊。用通常提供的螺釘擰緊新的NIC。</span></p>
-<p lang=""><span style="color: #008000;">7.請按照安全維修步驟關閉計算機的側蓋。</span></p>
-<p lang=""><span style="color: #008000;">8.重新連接主電源線。</span></p>
-<p lang=""><span style="color: #008000;">9.</span><span style="color: #008000;">打開機器電源。</span></p>
-<p lang=""><span style="color: #000000;">英.After the NIC hardware is installed, the drivers should install automatically, depending on the operating system. For Windows (Vista/Win7/Win8.1/Win10), verify connectivity in the network and sharing center. For Linux, go to network settings, and search online for the appropriate driver depending on the <a aria-describedby="N106D4" class="extra" id="" style="color: #000000;"></a>Linux distribution , such as Red Hat Linux or Ubuntu).</span></p>
-<p id="N106D0" lang=""><span style="color: #800000;"><strong><span style="color: #ff0000;">中</span></strong>.安裝NIC硬件後，驅動程序應根據操作系統自動安裝。對於Windows（Vista / Win7 / Win8.1 / Win10），請驗證網絡和共享中心中的連接。對於Linux，請轉到網絡設置，然後根據<a aria-describedby="N106D4" class="extra" id="" style="color: #800000;"></a>Linux發行版（例如Red Hat Linux或Ubuntu）在線搜索適當的驅動程序 。</span></p>
-<br />Network Devices(網路設備) << <a href='Network Devices(網路設備).html'>Previous</a> <a href='PCH13.IPv4 and IPv6 Addresses(IPv4和IPv6的地址).html'>Next</a> >> PCH13.IPv4 and IPv6 Addresses(IPv4和IPv6的地址)</div>
+    <div id="tipue_search_content">IPv4 Addressing(IPv4編址) << <a href='IPv4 Addressing(IPv4編址).html'>Previous</a> <a href='W7 homework2.html'>Next</a> >> W7 homework2<br /><h1>IPv4 Address Classes(IPv4網址類別)</h1>
+<p><strong><span><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image2.png"/></span></strong></p>
+<p><strong><span>英.As you can see, when the subnet mask has a 255 in it, it is defining the network portion of the address. In class A addresses, the first octet defines the network, and the last three define the host. In class B addresses, the first two octets define the network, the last two define the host. In class C addresses, the first three octets define the network, the last one defines the host.</span></strong></p>
+<p><span style="color: #800000;"><strong><span style="color: #ff0000;">中.</span>如您所見，當子網掩碼中包含255時，它定義了網址的網絡部分。 在A類網址中，第一個八位位組定義網絡，最後三個八位位組定義主機。 在B類網址中，前兩個八位位組定義網絡，後兩個定義主機。 在C類網址中，前三個八位位組定義網絡，最後一個八位位組定義主機。</strong></span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">IP address (in decimal)</th>
+<th lang="">10</th>
+<th lang="">1</th>
+<th lang="">2</th>
+<th lang="">3</th>
+</tr>
+<tr>
+<th lang="">IP address (in binary)</th>
+<th lang="">00001010</th>
+<th lang="">00000001</th>
+<th lang="">00000010</th>
+<th lang="">00000011</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in decimal)</th>
+<th lang="">255</th>
+<th lang="">0</th>
+<th lang="">0</th>
+<th lang="">0</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in binary)</th>
+<th lang="">11111111</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+</tr>
+<tr>
+<th lang=""></th>
+<th lang="">Network bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+</tr>
+</thead>
+</table>
+<p id="N1069F" lang=""><span title=""><span style="color: #ff0000;"><br/></span></span>英.Subnet masks are used to define the specific network we are referencing. A standard class A subnet mask of 255.0.0.0 is used for all networks where the first octet starts with a number between 1 and 126. Recall from the subnet table below, our network was 10.0.0.0.</p>
+<p lang=""><span title=""><span style="color: #ff0000;">中</span>.<span style="color: #800000;">子網掩碼用於定義我們要引用的特定網絡。</span></span><span style="color: #800000;"> <span class="" title="">255.0.0.0的標準A類子網掩碼適用於所有第一個八位位組以1到126之間的數字開頭的網絡。從下面的子網表中調用，我們的網絡為10.0.0.0。</span></span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang=""><em class="bold" lang="">Address Class</em></th>
+<th lang=""><em class="bold" lang="">Value in First Octet</em></th>
+<th lang=""><em class="bold" lang="">Classful Mask (Dotted Decimal)</em></th>
+<th lang=""><em class="bold" lang="">Classful Mask (Prefix Notation)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang="">Class A</td>
+<td lang="">1 – 126</td>
+<td lang="">255.0.0.0</td>
+<td lang="">/8</td>
+</tr>
+<tr class="e">
+<td lang="">Class B</td>
+<td lang="">128 – 191</td>
+<td lang="">255.255.0.0</td>
+<td lang="">/16</td>
+</tr>
+<tr>
+<td lang="">Class C</td>
+<td lang="">192 – 223</td>
+<td lang="">255.255.255.0</td>
+<td lang="">/24</td>
+</tr>
+</tbody>
+</table>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0">
+<p id="N106FE" lang="">英.Therefore, this address fits into the class A category. In this course, we only deal with “classful” subnet masks — the ones that only contain values of 255 and 0. In future courses, you may see other subnet masks used to further break apart the networks.</p>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="character-count tlid-character-count">
+<div class="cc-ctr normal"><span title=""><span style="color: #ff0000;">中</span><span style="color: #800000;">.因此，該地址屬於A類類別。</span></span><span class="" style="color: #800000;" title=""> 在本課程中，我們僅處理“有類”子網掩碼-僅包含255和0的值。在以後的課程中，您可能會看到其他子網掩碼用於進一步拆分網絡。</span></div>
+</div>
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img" style="color: #800000;"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+英.As you can see in the address classes table, class A references networks with the first octet having a value of 1-126, class B references 128-191, class C references 192-223. There is also a special address called the loopback address, which is 127.0.0.1. The entire range of 127.x.x.x is reserved to support this loopback address. A loopback address is an IP reserved to reference the computer on which you are currently working. Every computer knows to answer up for itself when a reference to 127.0.0.1 is given. This is also known as as the “localhost.”<br/><br/>To route your traffic over the Internet, you are required to have a publically routable IP address. These addresses are globally managed by the Internet Corporation for Assigned Names and Numbers (ICANN). If you desire to have one of these addresses, you must purchase them for use to ensure no one else has that specific number. For most users, this is done for you by your Internet service provider (ISP), but if you have a need for numerous public IP addresses, you can buy a block of them from ICANN.<br/><br/>Private IP addresses, on the other hand, can be used by anyone without any prior coordination. This is because private IP addresses are not routable over the Internet and are only used inside your local area network. For example, at your home, you may have five computers hooked up to your switch and those machines are all using private IP addresses. When you make a request to go outside the network, like to visit a college’s website, your router performs a network address translation (NAT) that allows your private IP address to be converted into a public IP address and a port, which then makes the request on your behalf. There is a specific range of IP addresses that are reserved as private for internal use (by you and others).<br/><br/></div>
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" role="button" tabindex="0"><span style="color: #800000;"><span style="color: #ff0000;">中</span>.如您在地址類別表中看到的，類別A引用第一個八位位組值為1-126的網絡，類別B引用128-191，類別C引用192-223。還有一個稱為回送地址的特殊地址，即127.0.0.1。保留127.x.x.x的整個範圍以支持此回送地址。回送地址是保留的IP，用於引用您當前正在使用的計算機。當給出對127.0.0.1的引用時，每台計算機都知道會自己回答。這也稱為“本地主機”。</span><br/><br/><span style="color: #800000;">要通過Internet路由流量，您需要具有可公共路由的IP地址。這些地址由互聯網名稱與數字地址分配機構（ICANN）全局管理。如果您希望擁有這些地址之一，則必須購買它們以確保沒有其他人擁有該特定號碼。對於大多數用戶而言，這是由Internet服務提供商（ISP）為您完成的，但是如果您需要大量的公共IP地址，則可以從ICANN購買其中的一部分。</span><br/><br/><span style="color: #800000;">另一方面，任何人都可以使用私有IP地址，而無需事先協調。這是因為專用IP地址無法通過Internet路由，而只能在局域網內使用。例如，在您的家裡，您可能有五台計算機連接到交換機，而這些計算機都使用專用IP地址。當您發出訪問網絡的請求（例如訪問大學的網站）時，路由器會執行網絡地址轉換（NAT），該轉換可將您的私有IP地址轉換為公共IP地址和端口，從而使代表您提出要求。有一個特定範圍的IP地址保留為私有（供您和他人使用）供內部使用。</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br />IPv4 Addressing(IPv4編址) << <a href='IPv4 Addressing(IPv4編址).html'>Previous</a> <a href='W7 homework2.html'>Next</a> >> W7 homework2</div>
         
     <!-- footer -->
       <div class="container">
