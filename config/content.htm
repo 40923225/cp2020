@@ -422,5 +422,89 @@
 <p><a href="https://www.kaggle.com/nfu40923225/w8-cp2020" title="https://www.kaggle.com/nfu40923225/w8-cp2020">https://www.kaggle.com/nfu40923225/w8-cp2020</a></p>
 <h1>Homework(作業2)</h1>
 <p><a href="https://www.kaggle.com/nfu40923225/hw2-cp2020" title="https://www.kaggle.com/nfu40923225/hw2-cp2020">https://www.kaggle.com/nfu40923225/hw2-cp2020</a></p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_79068">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">import urllib.request</code></div>
+<div class="line number2 index1 alt1"> </div>
+<div class="line number3 index2 alt2"><code class="html plain">#導入urllib.request</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"><code class="html plain">target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</code></div>
+<div class="line number6 index5 alt1"> </div>
+<div class="line number7 index6 alt2"><code class="html plain">#設target_url = "網址"</code></div>
+<div class="line number8 index7 alt1"> </div>
+<div class="line number9 index8 alt2"><code class="html plain">cp1b = []</code></div>
+<div class="line number10 index9 alt1"> </div>
+<div class="line number11 index10 alt2"><code class="html plain">#設cp1b=數列</code></div>
+<div class="line number12 index11 alt1"> </div>
+<div class="line number13 index12 alt2"><code class="html plain">for line in urllib.request.urlopen(target_url):</code></div>
+<div class="line number14 index13 alt1"> </div>
+<div class="line number15 index14 alt2"><code class="html plain">#重複打開target_url的迴圈定義line</code></div>
+<div class="line number16 index15 alt1"> </div>
+<div class="line number17 index16 alt2"><code class="html spaces">    </code><code class="html plain">cp1b.append(int(line.decode('utf-8').rstrip()))</code></div>
+<div class="line number18 index17 alt1"> </div>
+<div class="line number19 index18 alt2"><code class="html spaces">    </code><code class="html plain">#把line重新編碼加進cp1b(數列)   註:rstrip()刪除字尾符號</code></div>
+<div class="line number20 index19 alt1"> </div>
+<div class="line number21 index20 alt2"><code class="html plain">print(cp1b)</code></div>
+<div class="line number22 index21 alt1"> </div>
+<div class="line number23 index22 alt2"><code class="html plain">#印出cp1b</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <h1>Homework(作業3)</h1>
 <p><a href="https://www.kaggle.com/nfu40923225/w10-w14" title="https://www.kaggle.com/nfu40923225/w10-w14">https://www.kaggle.com/nfu40923225/w10-w14</a></p>
+<p><strong>Divisors(除數)</strong></p>
+<p>The topics that you need for this exercise combine lists, conditionals, and user input. There is a new concept of creating lists.There is an easy way to programmatically create lists of numbers in Python.</p>
+<p>(<span>本練習需要的主題包括列表，條件和用戶輸入。有一個創建列表的新概念。</span>有一種簡便的方法可以在Python中以編程方式創建數字列表。)</p>
+<p>To create a list of numbers from 2 to 10, just use the following code:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span></code></pre>
+</figure>
+<p>Then the variable<span> </span><code class="highlighter-rouge">x</code><span> </span>will contain the list<span> </span><code class="highlighter-rouge">[2, 3, 4, 5, 6, 7, 8, 9, 10]</code>. Note that the second number in the<span> </span><code class="highlighter-rouge">range()</code><span> </span>function is not included in the original list.</p>
+<p>Now that<span> </span><code class="highlighter-rouge">x</code><span> </span>is a list of numbers, the same for loop can be used with the list:</p>
+<p><span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span></p>
+<p><span class="k">print</span> <span class="n">elem</span></p>
+<p>Will yield the result:</p>
+<p>2.3.4.5.6.7.8.9.10</p>
+<p><em><strong>Exercise 4(練習4)</strong></em></p>
+<p><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。)</span></p>
+<p><em><strong>solution(解答)</strong></em></p>
+<p><strong>num=int(input("Enter the number you want to divide: "))</strong><br/><strong>listRange=list(range(1,num+1))</strong><br/><strong>divisorList=[]</strong><br/><strong>for number in listRange:</strong><br/><strong> if num % number == 0:</strong><br/><strong> divisorList.append(number)</strong><br/><strong>print(divisorList) </strong></p>
+<figure class="highlight">
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon"></code></pre>
+</figure>
+</figure>
