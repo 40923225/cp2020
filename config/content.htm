@@ -650,7 +650,7 @@
 </div>
 <h1>Homework3(作業3)</h1>
 <p><a href="https://www.kaggle.com/nfu40923225/w10-w14" title="https://www.kaggle.com/nfu40923225/w10-w14">https://www.kaggle.com/nfu40923225/w10-w14</a></p>
-<p><strong>Divisors(除數)</strong></p>
+<h2><strong>Divisors(除數)</strong></h2>
 <p>The topics that you need for this exercise combine lists, conditionals, and user input. There is a new concept of creating lists.There is an easy way to programmatically create lists of numbers in Python.</p>
 <p>(<span>本練習需要的主題包括列表，條件和用戶輸入。有一個創建列表的新概念。</span>有一種簡便的方法可以在Python中以編程方式創建數字列表。)</p>
 <p>To create a list of numbers from 2 to 10, just use the following code:</p>
@@ -666,7 +666,12 @@
 <p><em><strong>Exercise 4(練習4)</strong></em></p>
 <p><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。)</span></p>
 <p><em><strong>solution(解答)</strong></em></p>
-<p><strong>num=int(input("Enter the number you want to divide: "))</strong><br/><strong>listRange=list(range(1,num+1))</strong><br/><strong>divisorList=[]</strong><br/><strong>for number in listRange:</strong><br/><strong> if num % number == 0:</strong><br/><strong> divisorList.append(number)</strong><br/><strong>print(divisorList) </strong></p>
+<p><strong>num=int(input("Enter the number you want to divide: "))</strong><br/><strong>listRange=list(range(1,num+1))</strong><br/><strong>divisorList=[]</strong><br/><strong>for number in listRange:</strong><br/><strong> if num % number == 0:</strong><br/><strong> divisorList.append(number)</strong><br/><strong>print(divisorList)</strong></p>
+<h2><strong><span>File Overlap Solutions</span></strong></h2>
+<p><em><strong>Exercise 23(練習23)</strong></em></p>
+<p><strong><span>Given two <code class="highlighter-rouge">.txt</code><span><span> </span>files that have lists of numbers in them, find the numbers that are overlapping.<span> </span></span>One<span> </span><code class="highlighter-rouge">.txt</code><span> </span>file<span><span> </span>has a list of all prime numbers under 1000, and<span> </span></span>the other<span> </span><code class="highlighter-rouge">.txt</code><span> </span>file<span><span> </span>has a list of happy numbers up to 1000.</span></span></strong></p>
+<p><strong><span><span><span>(給定</span><code class="highlighter-rouge">.txt</code><span><span>其中有數字列表的</span><span>兩個</span><span>文件，請查找重疊的數字。</span></span><span><span>一個</span></span><code class="highlighter-rouge">.txt</code><span><span>文件</span></span><span><span>包含所有小於1000的質數的列表，</span></span><span><span>另一個</span></span><code class="highlighter-rouge">.txt</code><span><span>文件</span></span><span><span>包含不超過1000的快樂數的列表。)</span></span></span></span></strong></p>
+<p><strong><span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">file_to_list</span><span class="hljs-params">(file_to_convert)</span>:</span><br/><span> </span><span class="hljs-keyword">with</span><span> open(file_to_convert, </span><span class="hljs-string">"r"</span><span>) </span><span class="hljs-keyword">as</span><span> open_file:</span><br/><span> list_to_return = []</span><br/><span> line = open_file.readline()</span><br/><span> </span><span class="hljs-keyword">while</span><span> line:</span><br/><span> list_to_return.append(int(line))</span><br/><span> line = open_file.readline()</span><br/><span> </span><span class="hljs-keyword">return</span><span> list_to_return</span><br/><br/><span>def overlapping_numbers(file_one, file_two):</span><br/><span> </span><span class="hljs-keyword">return</span><span> set(file_to_list(file_one)) &amp; set(file_to_list(file_two))</span><br/><br/><span class="hljs-keyword">if</span><span> __name__ == </span><span class="hljs-string">"__main__"</span><span>:</span><br/><span> print(sorted(overlapping_numbers(</span><span class="hljs-string">"primenumbers.txt"</span><span>, </span><span class="hljs-string">"happynumbers.txt"</span><span>)))</span></span></span></strong></p>
 <figure class="highlight">
 <figure class="highlight">
 <pre><code class="language-pycon" data-lang="pycon"></code></pre>

@@ -133,39 +133,24 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">IPv6 << <a href='IPv6.html'>Previous</a> <a href='Windows Networking(Windows網絡).html'>Next</a> >> Windows Networking(Windows網絡)<br /><h1>Classful Vs. Classless Addressing.Subnet and CIDR(相對於無類尋址.子網和CIDR)</h1>
-<p><span style="color: #000000;">英.The IP address always determines the type of network, not the subnet. If the IP addresses match, the network is said to be using a "classification" scheme. However, when companies need more publicly routable IP addresses than the address classes they use, this wastes many IP addresses. The purpose of developing classless inter-domain routing (CIDR) is to make the IP addressing scheme more efficient and delay the exhaustion of IPv4 addresses. Essentially, certain network bits in the default subnet mask are borrowed and used in the host portion of the network.</span></p>
-<p><span style="color: #800000;"><strong><span style="color: #ff0000;">中</span></strong>.IP地址始終確定網絡的類別，而不是子網。如果IP地址匹配，則稱網絡正在使用“分類”方案。但是，當公司需要比他們使用的地址類更多的可公共路由的IP地址時，這會浪費許多IP地址。開發無類域間路由（CIDR）的目的是使IP尋址方案更高效並延遲IPv4地址的耗盡。本質上，默認子網掩碼中的某些網絡位被借用並用於網絡的主機部分。</span></p>
-<p><span style="color: #000000;">Private vs. Public IP<span style="color: #800000;">(私有與公共IP)</span><br/>英.IPv4 exhaustion affects the public addresses that are routable on the Internet for devices such as routers and servers, and the devices used to connect your house to the Internet. Whether it is a cable modem, DSL or FIOS, the device has a public IP address for communicating with an Internet service provider (ISP). This is an example of WAN. LAN (Local Area Network) consists entirely of dedicated IP addresses.</span></p>
-<p><span style="color: #800000;"><strong><span style="color: #ff0000;">中.</span></strong>IPv4耗盡會影響路由器和服務器等設備以及用於將房屋連接到Internet的設備在Internet上可路由的公用地址。 無論是電纜調製解調器，DSL還是FIOS，設備都具有用於與Internet服務提供商（ISP）通信的公共IP地址。 這是WAN的一個例子。 LAN（局域網）完全由專用IP地址組成。</span></p>
-<p><span style="color: #000000;">Static and dynamic IP addressing<span style="color: #800000;">(靜態和動態IP尋址)</span><br/>英.Historically, operating system IPv4 configuration will be used to manually assign static IP addresses to clients (workstations or printers). Remember, there must be a unique IP address in any network. Imagine how difficult it is to keep track of all the different nodes and IP addresses in a large company. Dynamic Host Configuration Protocol (DHCP) solves this problem by allowing devices (servers or routers) to automatically assign IP addresses. In the current network structure, you still assign static IP addresses to devices that must ensure connectivity: servers, routers, managed switches, etc.</span></p>
-<p><span style="color: #800000;"><strong><span style="color: #ff0000;">中</span></strong>.歷史上，操作系統IPv4配置將用於為客戶端（工作站或打印機）手動分配靜態IP地址。 請記住，任何網絡中都必須有一個唯一的IP地址。 想像一下，跟踪大公司中所有不同的節點和IP地址有多麼困難。 動態主機配置協議（DHCP）通過允許設備（服務器或路由器）自動分配IP地址來解決此問題。 在當前的網絡結構中，您仍將靜態IP地址分配給必須確保連接的設備：服務器，路由器，管理型交換機等。</span></p>
-<p><span style="color: #000000;">APIPA/local link<span style="color: #800000;">(APIPA /本地鏈接)</span><br/>英.When there is no statically assigned IP address, or DHCP does not assign an IP address to the network interface, the local link address is a special address assigned by the operating system.</span></p>
-<p><span style="color: #800000;"><strong><span style="color: #ff0000;">中.</span></strong>如果沒有靜態分配的IP地址，或者DHCP沒有為網絡接口分配IP地址，則本地鏈接地址是操作系統分配的特殊地址。</span></p>
-<p><span style="color: #000000;">Client-side DHCP(</span>客戶端DHCP)</p>
-<p><span style="color: #000000;">英.DHCP works by having an authoritative device, either a server or a router, offering to assign the IP address. In order for this to work, the client must be configured to look for the DHCP authority, and confirm that it will accept the IP assignment. These settings are located in “network connections” through either the network and sharing center or directly through the control panel. The configuration settings are located in the properties of the connection under either IPv4 or IPv6.</span></p>
-<p><span style="color: #800000;"><strong><span style="color: #ff0000;">中</span></strong>.DHCP通過擁有授權設備（服務器或路由器）來分配IP地址而起作用。 為了使它起作用，必須將客戶端配置為尋找DHCP授權，並確認它將接受IP分配。 這些設置通過網絡和共享中心位於“網絡連接”中，也可以直接通過控制面板位於“網絡連接”中。 配置設置位於IPv4或IPv6下的連接屬性中。</span></p>
-<p><span style="color: #000000;">Client-side DNS settings<span style="color: #800000;">(</span></span><span style="color: #800000;">客戶端DNS設置)</span></p>
-<p><span style="color: #000000;">英.The domain name system (DNS) is a part of the Internet protocol that translates IP addresses to name addresses. There is a setting located in the network properties section of the IPv4 or IPv6 property window that allows for the manual setting of the the domain name system (DNS) server address. The local DNS cache will keep a local record of IP address to name conversion for both LAN devices and Internet addresses. Alternate DNS server addresses can be added to the client to assist in name resolution, thus improving data flow.</span></p>
-<p><span style="color: #800000;"><strong><span style="color: #ff0000;">中</span></strong>.域名系統（DNS）是Internet協議的一部分，該協議將IP地址轉換為名稱地址。 IPv4或IPv6屬性窗口的網絡屬性部分中有一個設置，允許手動設置域名系統（DNS）服務器地址。 本地DNS緩存將保留IP地址到LAN設備和Internet地址的名稱轉換的本地記錄。 可以將備用DNS服務器地址添加到客戶端以幫助名稱解析，從而改善數據流。</span></p>
-<p><span style="color: #000000;">Gateway<span style="color: #800000;">(網關)</span><br/>英.A gateway is a device that connects different network types together. In most SOHO (small office, home office) environments today, this is a router that connects the LAN to the ISP modem through a WAN port (cable, DSL or FIOS), which can provide Internet access.</span></p>
-<p><span style="color: #800000;"><strong><span style="color: #ff0000;">中</span></strong>.網關是將不同網絡類型連接在一起的設備。 在當今的大多數SOHO（小型辦公室，家庭辦公室）環境中，這是一個通過WAN端口（電纜，DSL或FIOS）將LAN連接到ISP調製解調器的路由器，可以提供Internet訪問。</span></p>
-<div class="tlid-input input">
-<div class="source-wrap">
-<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
-<div class="source-input">
-<div class="source-footer-wrap source-or-target-footer">
-<div class="source-footer">
-<div class="speech-wrap source-or-target-footer-button left-positioned">
-<div class="tlid-input input">
-<div class="source-wrap">
-<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
-<div class="source-input">
-<div class="source-footer-wrap source-or-target-footer">
-<div class="source-footer">
-<div class="speech-wrap source-or-target-footer-button left-positioned">
-<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0">
-<br />IPv6 << <a href='IPv6.html'>Previous</a> <a href='Windows Networking(Windows網絡).html'>Next</a> >> Windows Networking(Windows網絡)</div>
+    <div id="tipue_search_content">Homework3(作業3) << <a href='Homework3(作業3).html'>Previous</a> <a href='File Overlap Solutions.html'>Next</a> >> File Overlap Solutions<br /><h1>Divisors(除數)</h1>
+<p>The topics that you need for this exercise combine lists, conditionals, and user input. There is a new concept of creating lists.There is an easy way to programmatically create lists of numbers in Python.</p>
+<p>(<span>本練習需要的主題包括列表，條件和用戶輸入。有一個創建列表的新概念。</span>有一種簡便的方法可以在Python中以編程方式創建數字列表。)</p>
+<p>To create a list of numbers from 2 to 10, just use the following code:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span></code></pre>
+</figure>
+<p>Then the variable<span> </span><code class="highlighter-rouge">x</code><span> </span>will contain the list<span> </span><code class="highlighter-rouge">[2, 3, 4, 5, 6, 7, 8, 9, 10]</code>. Note that the second number in the<span> </span><code class="highlighter-rouge">range()</code><span> </span>function is not included in the original list.</p>
+<p>Now that<span> </span><code class="highlighter-rouge">x</code><span> </span>is a list of numbers, the same for loop can be used with the list:</p>
+<p><span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span></p>
+<p><span class="k">print</span> <span class="n">elem</span></p>
+<p>Will yield the result:</p>
+<p>2.3.4.5.6.7.8.9.10</p>
+<p><em><strong>Exercise 4(練習4)</strong></em></p>
+<p><span>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。)</span></p>
+<p><em><strong>solution(解答)</strong></em></p>
+<p><strong>num=int(input("Enter the number you want to divide: "))</strong><br/><strong>listRange=list(range(1,num+1))</strong><br/><strong>divisorList=[]</strong><br/><strong>for number in listRange:</strong><br/><strong> if num % number == 0:</strong><br/><strong> divisorList.append(number)</strong><br/><strong>print(divisorList)</strong></p>
+<br />Homework3(作業3) << <a href='Homework3(作業3).html'>Previous</a> <a href='File Overlap Solutions.html'>Next</a> >> File Overlap Solutions</div>
         
     <!-- footer -->
       <div class="container">
