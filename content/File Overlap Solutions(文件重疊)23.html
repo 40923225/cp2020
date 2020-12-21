@@ -133,8 +133,16 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='PCH10.Networking Hardware(網路硬件).html'>Next</a> >> PCH10.Networking Hardware(網路硬件)<br /><h1>Homework1(作業1)</h1>
-<br /> <a href='PCH10.Networking Hardware(網路硬件).html'>Next</a> >> PCH10.Networking Hardware(網路硬件)</div>
+    <div id="tipue_search_content">Divisors(除數)4 << <a href='Divisors(除數)4.html'>Previous</a> <br /><h1>File Overlap Solutions(文件重疊)23</h1>
+<p><em><strong>Exercise 23(練習23)</strong></em></p>
+<p><strong><span>Given two <code class="highlighter-rouge">.txt</code><span><span> </span>files that have lists of numbers in them, find the numbers that are overlapping.<span> </span></span>One<span> </span><code class="highlighter-rouge">.txt</code><span> </span>file<span><span> </span>has a list of all prime numbers under 1000, and<span> </span></span>the other<span> </span><code class="highlighter-rouge">.txt</code><span> </span>file<span><span> </span>has a list of happy numbers up to 1000.</span></span></strong></p>
+<p><strong><span><span><span>(給定</span><code class="highlighter-rouge">.txt</code><span><span>其中有數字列表的</span><span>兩個</span><span>文件，請查找重疊的數字。</span></span><span><span>一個</span></span><code class="highlighter-rouge">.txt</code><span><span>文件</span></span><span><span>包含所有小於1000的質數的列表，</span></span><span><span>另一個</span></span><code class="highlighter-rouge">.txt</code><span><span>文件</span></span><span><span>包含不超過1000的快樂數的列表。)</span></span></span></span></strong></p>
+<p><strong><span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">file_to_list</span><span class="hljs-params">(file_to_convert)</span>:</span><br/><span> </span><span class="hljs-keyword">with</span><span> open(file_to_convert, </span><span class="hljs-string">"r"</span><span>) </span><span class="hljs-keyword">as</span><span> open_file:</span><br/><span> list_to_return = []</span><br/><span> line = open_file.readline()</span><br/><span> </span><span class="hljs-keyword">while</span><span> line:</span><br/><span> list_to_return.append(int(line))</span><br/><span> line = open_file.readline()</span><br/><span> </span><span class="hljs-keyword">return</span><span> list_to_return</span><br/><br/><span>def overlapping_numbers(file_one, file_two):</span><br/><span> </span><span class="hljs-keyword">return</span><span> set(file_to_list(file_one)) &amp; set(file_to_list(file_two))</span><br/><br/><span class="hljs-keyword">if</span><span> __name__ == </span><span class="hljs-string">"__main__"</span><span>:</span><br/><span> print(sorted(overlapping_numbers(</span><span class="hljs-string">"primenumbers.txt"</span><span>, </span><span class="hljs-string">"happynumbers.txt"</span><span>)))</span></span></span></strong></p>
+<figure class="highlight">
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon"></code></pre>
+</figure>
+</figure><br />Divisors(除數)4 << <a href='Divisors(除數)4.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
